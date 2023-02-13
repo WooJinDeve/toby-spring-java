@@ -1,4 +1,4 @@
-package com.autoconfiguration;
+package com.autoconfiguration.helloboot;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.http.HttpHeaders.CONTENT_TYPE;
