@@ -39,3 +39,4 @@ out/
 
 hello/gradle
 spring-container/gradle
+di-test/gradle

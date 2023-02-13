@@ -2,3 +2,4 @@ rootProject.name = 'toby-spring'
 
 include 'hello'
 include 'spring-container'
+include 'di-test'
