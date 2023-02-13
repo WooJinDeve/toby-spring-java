@@ -2,6 +2,8 @@ package com.autoconfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.autoconfiguration.helloboot.HelloDecorator;
+import com.autoconfiguration.helloboot.SimpleHelloService;
 import org.junit.jupiter.api.Test;
 
 

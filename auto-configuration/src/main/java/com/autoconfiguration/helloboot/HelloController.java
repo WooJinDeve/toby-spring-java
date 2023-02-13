@@ -1,4 +1,4 @@
-package com.autoconfiguration;
+package com.autoconfiguration.helloboot;
 
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.GetMapping;

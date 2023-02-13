@@ -1,4 +1,4 @@
-package com.autoconfiguration;
+package com.autoconfiguration.helloboot;
 
 import org.springframework.stereotype.Service;
 
