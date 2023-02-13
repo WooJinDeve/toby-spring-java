@@ -40,3 +40,4 @@ out/
 hello/gradle
 spring-container/gradle
 di-test/gradle
+auto-configuration/gradle
