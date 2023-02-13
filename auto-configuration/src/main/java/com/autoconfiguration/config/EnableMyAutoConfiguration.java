@@ -1,7 +1,5 @@
 package com.autoconfiguration.config;
 
-import com.autoconfiguration.config.autoconfig.DispatcherServletConfig;
-import com.autoconfiguration.config.autoconfig.TomcatWebServerConfig;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
