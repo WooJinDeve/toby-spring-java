@@ -1,10 +1,11 @@
 package com.config.autoconfig;
 
-import org.springframework.beans.factory.annotation.Value;
+import com.config.MyConfigurationProperties;
 
+@MyConfigurationProperties(prefix = "server")
 public class ServerProperties {
 
-    private String contextPath = "";
+    private String contextPath = "/app";
 
     private int port = 8080;
 
