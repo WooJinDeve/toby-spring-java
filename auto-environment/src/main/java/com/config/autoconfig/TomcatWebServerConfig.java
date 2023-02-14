@@ -11,15 +11,12 @@ import org.springframework.context.annotation.Bean;
 @MyAutoConfiguration
 @ConditionalMyOnClass("org.apache.catalina.startup.Tomcat")
 public class TomcatWebServerConfig {
-
-    @Value("${contextPath}")
-    private String contextPath;
-
     @Bean("tomcatWebServerFactory")
     @ConditionalOnMissingBean
-    public ServletWebServerFactory servletWebServerFactory() {
+    public ServletWebServerFactory servletWebServerFactory(ServerProperties serverProperties) {
         TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
-        factory.setContextPath(this.contextPath);
+        factory.setContextPath(serverProperties.getContextPath());
+        factory.setPort(serverProperties.getPort());
         return factory;
     }
 }
