@@ -43,3 +43,4 @@ di-test/gradle
 auto-configuration/gradle
 conditional/gradle
 auto-environment/gradle
+data-source/gradle

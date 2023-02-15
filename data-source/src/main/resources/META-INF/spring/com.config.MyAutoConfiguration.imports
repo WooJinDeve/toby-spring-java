@@ -1,0 +1,5 @@
+com.config.autoconfig.DispatcherServletConfig
+com.config.autoconfig.TomcatWebServerConfig
+com.config.autoconfig.JettyWebServerConfig
+com.config.autoconfig.PropertiesPlaceholderConfig
+com.config.autoconfig.PropertyPostProcessorConfig
