@@ -44,3 +44,4 @@ auto-configuration/gradle
 conditional/gradle
 auto-environment/gradle
 data-source/gradle
+spring-boot-apply/gradle
