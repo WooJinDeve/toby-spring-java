@@ -35,14 +35,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-
-hello/gradle
-spring-container/gradle
-di-test/gradle
-auto-configuration/gradle
-conditional/gradle
-auto-environment/gradle
-data-source/gradle
-spring-boot-apply/gradle
-spring-boot-auto-configuration/gradle
