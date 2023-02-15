@@ -9,7 +9,7 @@ public class HelloControllerTest {
 
     @Test
     void helloController(){
-        HelloController helloController = new HelloController(name -> name);
+        HelloController helloController = new HelloController(helloServiceStub);
 
         String ret = helloController.hello("Test");
 
@@ -18,7 +18,7 @@ public class HelloControllerTest {
 
     @Test
     void failsHelloController(){
-        HelloController helloController = new HelloController(name -> name);
+        HelloController helloController = new HelloController(helloServiceStub);
 
         //request is null
         assertThatThrownBy(() -> helloController.hello(null))
@@ -30,4 +30,18 @@ public class HelloControllerTest {
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("name is empty");
     }
+
+
+    private static HelloService helloServiceStub = new HelloService() {
+        @Override
+        public String sayHello(String name) {
+            return name;
+        }
+
+        @Override
+        public int countOf(String name) {
+            return 0;
+        }
+    };
+
 }

@@ -7,16 +7,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
     private final HelloService helloService;
+
     public HelloController(HelloService helloService) {
         this.helloService = helloService;
     }
 
     @GetMapping("/hello")
-    public String hello(String name){
+    public String hello(String name) {
         Assert.notNull(name, "name is null");
         Assert.hasText(name, "name is empty");
 
         return helloService.sayHello(name);
     }
 
+    @GetMapping("/count")
+    public String count(String name) {
+        return name + " : " +  helloService.countOf(name);
+    }
 }

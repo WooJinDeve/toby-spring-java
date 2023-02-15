@@ -1,14 +1,14 @@
 package com.helloboot;
 
 
-import com.annotation.TransactionTest;
+import com.annotation.HelloBootTest;
 import java.sql.Connection;
 import java.sql.SQLException;
 import javax.sql.DataSource;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@TransactionTest
+@HelloBootTest
 public class DataSourceTest {
 
     @Autowired

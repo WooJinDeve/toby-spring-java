@@ -2,14 +2,14 @@ package com.helloboot;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-import com.annotation.TransactionTest;
+import com.annotation.HelloBootTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-@TransactionTest
+@HelloBootTest
 public class HelloRepositoryTest {
 
     @Autowired

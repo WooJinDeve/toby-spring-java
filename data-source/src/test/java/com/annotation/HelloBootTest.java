@@ -19,5 +19,5 @@ import org.springframework.transaction.annotation.Transactional;
 @ContextConfiguration(classes = DataSourceApplication.class)
 @TestPropertySource("classpath:/application.properties")
 @Transactional
-public @interface TransactionTest {
+public @interface HelloBootTest {
 }
